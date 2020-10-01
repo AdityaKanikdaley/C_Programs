@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,a;
+clrscr();
+printf("enter a no\n");
+scanf("%d",&n);
+if(n%7==0)
+printf("sunday");
+else
+{
+a=n-1;
+if(a%7==0)
+printf("monday");
+else
+{
+a=n-2;
+if(a%7==0)
+printf("tuesday");
+else
+{
+a=n-3;
+if(a%7==0)
+printf("wednesday");
+else
+{
+a=n-4;
+if(a%7==0)
+printf("thursday");
+else
+{
+a=n-5;
+if(a%7==0)
+printf("friday");
+else
+printf("saturday");
+}
+}
+}
+}
+}
+getch();
+}
